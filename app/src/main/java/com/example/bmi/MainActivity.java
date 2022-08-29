@@ -10,7 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    int numnang;
+    Float numnang;
     Float numcao;
     Float numkq;
     String str;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         bttinh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                numnang = Integer.parseInt(nang.getText().toString());
+                numnang = Float.parseFloat(nang.getText().toString());
                 numcao = Float.parseFloat(cao.getText().toString());
                 if (numcao==0){
                     kq.setText("Nhập đúng định dạng".toString());
